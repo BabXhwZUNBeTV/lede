@@ -71,10 +71,10 @@ jobs:
           du -h --max-depth=1 ./build_dir
           du -h --max-depth=1 ./bin
 
-      - name: gz test
-        run: |
-          gzip -d *.gz
-          gzip *.img
+     # - name: gz test
+      #  run: |
+       #   gzip -d *.gz
+        #  gzip *.img
           
       - name: Upload bin directory
         uses: actions/upload-artifact@main
